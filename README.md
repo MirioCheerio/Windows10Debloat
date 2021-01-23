@@ -1,2 +1,2 @@
-# Windows10Debloat = https://git.io/Jtswg
-# Windows10DebloatMinimal = https://git.io/Jtswr
+# Windows10Debloat = iex ((New-Object System.Net.WebClient).DownloadString('https://git.io/Jtswg'))
+# Windows10DebloatMinimal = iex ((New-Object System.Net.WebClient).DownloadString('https://git.io/Jtswr'))

@@ -4,7 +4,7 @@ $tweaks = @(
 	"RequireAdmin",
 	"CreateRestorePoint",
 	
-	### Chris Titus Tech Additions
+	### Additions
 	"TitusRegistryTweaks",
 	"InstallTitusProgs", #REQUIRED FOR OTHER PROGRAM INSTALLS!
 	"Install7Zip",
@@ -89,7 +89,7 @@ $tweaks = @(
 )
 
 #########
-# Recommended Titus Customizations
+# Recommended Customizations
 #########
 
 function Show-Choco-Menu {

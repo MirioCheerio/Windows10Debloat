@@ -474,6 +474,7 @@ $essentialtweaks.Add_Click({
     Set-ItemProperty -Path "HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Multimedia\SystemProfile\Tasks\Games" -Name "Priority" -Type DWord -Value 6
     Set-ItemProperty -Path "HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Multimedia\SystemProfile\Tasks\Games" -Name "Scheduling Category" -Type String -Value 'High'
     Set-ItemProperty -Path "HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Multimedia\SystemProfile\Tasks\Games" -Name "SFIO Priority" -Type String -Value 'High'
+    
  
 	Set-ItemProperty -Path "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\DeliveryOptimization\Config" -Name "DODownloadMode" -Type DWord -Value 1
     Write-Host "Stopping and disabling Diagnostics Tracking Service..."
@@ -694,7 +695,19 @@ $Bloatware = @(
         "*Hulu*"
         "*HiddenCity*"
         "*AdobePhotoshopExpress*"
-                     
+
+	#Extra apps added by MirioCheerio
+	"*3dbuilder*"
+	"*Microsoft.Microsoft3DViewer*"
+	"*bingsports*"
+	"*Microsoft.Messaging*"
+	"*Microsoft.MixedReality.Portal*" 
+	"*Microsoft.OneConnect*"
+	"*bingfinance*" 
+	"*windowsphone*"
+	"*Microsoft.YourPhone*"
+     
+    
         #Optional: Typically not removed but you can if you need to for some reason
         #"*Microsoft.Advertising.Xaml_10.1712.5.0_x64__8wekyb3d8bbwe*"
         #"*Microsoft.Advertising.Xaml_10.1712.5.0_x86__8wekyb3d8bbwe*"

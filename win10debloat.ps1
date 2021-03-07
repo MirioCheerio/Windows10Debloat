@@ -656,6 +656,8 @@ bcdedit /set disabledynamictick yes
 bcdedit /deletevalue useplatformclock
 bcdedit /set useplatformtick yes
 
+powercfg -delete a1841308-3541-4fab-bc81-f71556f20b4a
+
 
 $Bloatware = @(
 

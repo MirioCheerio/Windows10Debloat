@@ -645,6 +645,10 @@ New-ItemProperty -LiteralPath 'HKLM:\SYSTEM\CurrentControlSet\Services\diagnosti
 New-ItemProperty -LiteralPath 'HKLM:\SYSTEM\CurrentControlSet\Services\WdiServiceHost' -Name 'Start' -Value 4 -PropertyType DWord -Force -ea SilentlyContinue;
 New-ItemProperty -LiteralPath 'HKLM:\SYSTEM\CurrentControlSet\Services\WdiSystemHost' -Name 'Start' -Value 4 -PropertyType DWord -Force -ea SilentlyContinue;
 
+bcdedit /set disabledynamictick yes
+bcdedit /deletevalue useplatformclock
+bcdedit /set useplatformtick yes
+
 
 $Bloatware = @(
 

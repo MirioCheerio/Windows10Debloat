@@ -658,6 +658,8 @@ bcdedit /set useplatformtick yes
 
 powercfg -delete a1841308-3541-4fab-bc81-f71556f20b4a
 
+Disable-WindowsOptionalFeature -online -FeatureName internet-explorer-optional-amd64
+
 
 $Bloatware = @(
 
